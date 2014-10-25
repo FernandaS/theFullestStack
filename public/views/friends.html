@@ -1,0 +1,17 @@
+<div ng-repeat="friend in friends">
+<div>
+  name: {{friend.name}}, <br />
+  age: {{friend.age}}, <br />
+  yearMet: {{friend.yearMet}} <br />
+  <button ng-click="unFriend(friend)">un-Friend</button>
+</div>
+  <hr>
+</div>
+
+<br />
+<form ng-submit="addFriend()">
+  <input ng-model="friend.name" placeholder="name">
+  <input ng-model="friend.age" placeholder="age">
+  <input ng-model="friend.yearMet" placeholder="Year Met">
+  <button>Add Friend</button>
+</form>
